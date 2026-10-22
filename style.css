@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root{--ink:#172033;--muted:#68738a;--line:#e7eaf1;--bg:#f5f7fb;--blue:#3563e9;--blue-dark:#244bc2;--green:#18794e;--green-bg:#e8f7ef;--red:#a23b3b;--red-bg:#fff0f0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif}
+.topbar{min-height:76px;padding:0 max(24px,calc((100% - 1080px)/2));background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{color:var(--ink);text-decoration:none;font-family:'Manrope',sans-serif;font-size:18px;font-weight:800;display:flex;align-items:center;gap:10px}
+.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--blue);color:white;font-size:13px}
+.topbar-note{color:var(--muted);font-size:13px}.container{width:min(1080px,calc(100% - 36px));margin:0 auto}
+.hero{padding:52px 0 30px}.eyebrow{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:2px}
+h1,h2,h3{font-family:'Manrope',sans-serif}h1{font-size:clamp(32px,5vw,48px);letter-spacing:-1.8px;margin:12px 0}h1 span{color:var(--blue)}
+.hero-copy{color:var(--muted);font-size:16px;line-height:1.7;max-width:620px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;margin:18px 0;box-shadow:0 8px 30px rgba(23,32,51,.035)}
+.panel-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}.panel h2{font-size:19px;margin:0 0 6px}.panel-heading p{margin:0;color:var(--muted);font-size:13px}
+.student-form{display:grid;grid-template-columns:1fr 180px auto;gap:14px;align-items:end}label{display:grid;gap:8px;color:#39445b;font-size:13px;font-weight:700}
+input[type=text],input[type=number]{width:100%;min-height:44px;border:1px solid #dce1ec;border-radius:10px;padding:0 13px;font:inherit;outline:none;background:#fff}
+input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(53,99,233,.12)}
+button{border:0;border-radius:10px;background:var(--blue);color:#fff;cursor:pointer;min-height:44px;padding:0 17px;font:inherit;font-weight:700}button:hover{background:var(--blue-dark)}button span{font-size:19px;margin-left:8px}
+.record-pill{color:var(--green);background:var(--green-bg);padding:7px 10px;border-radius:99px;font-size:10px;font-weight:800;letter-spacing:1px}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.8px;background:#fafbfe}th,td{padding:15px 12px;border-bottom:1px solid var(--line)}td{font-size:13px}.student-name{font-weight:700}.muted{color:var(--muted)}
+.status{display:inline-block;padding:6px 9px;border-radius:99px;font-size:11px;font-weight:700}.pass{color:var(--green);background:var(--green-bg)}.fail{color:var(--red);background:var(--red-bg)}
+.delete-button{min-height:32px;padding:0 11px;color:var(--red);background:#fff;border:1px solid #f1d6d6;font-size:12px}.delete-button:hover{background:var(--red-bg)}
+.empty-state{padding:30px;text-align:center;color:var(--muted)}.empty-state h3{color:var(--ink)}footer{padding:26px 0 42px;text-align:center;color:var(--muted);font-size:12px}
+@media(max-width:760px){.topbar{padding:0 18px}.topbar-note{display:none}.hero{padding-top:34px}.panel{padding:18px}.student-form{grid-template-columns:1fr}.student-form button{width:100%}}
